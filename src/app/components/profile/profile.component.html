@@ -1,0 +1,36 @@
+<div class="container">
+    <!-- el empleado tiene los siguientes datos: idEmpleado, apellido, oficio, salario, director -->
+        <div class="row">
+            <div class="col-6">
+                <h1>Perfil de empleado</h1>
+                <p>Nombre: {{empleado.apellido}}</p>
+                <p>Apellido: {{empleado.oficio}}</p>
+                <p>Salario: {{empleado.salario}}</p>
+                <p>Director: {{empleado.director}}</p>
+            </div>
+        </div>
+
+        <div>
+            <h1>Subordinados</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Oficio</th>
+                        <th scope="col">Salario</th>
+                        <th scope="col">Director</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let sub of subordinados">
+                        <td>{{sub.idEmpleado}}</td>
+                        <td>{{sub.apellido}}</td>
+                        <td>{{sub.oficio}}</td>
+                        <td>{{sub.salario}}</td>
+                        <td>{{sub.director}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>

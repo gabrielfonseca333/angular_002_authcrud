@@ -1,0 +1,11 @@
+<div class="container">
+    
+    <div class="col-6 mx-auto">
+        <h1>Login</h1>
+        <form #form="ngForm">
+            <input #cajausuario name="cajausuario" class="form-control" type="text" placeholder="Usuario">
+            <input #cajacontrasena name="cajacontrasena" class="form-control" type="text" placeholder="Contraseña">
+            <button (click)="login()" class="btn btn-primary">Entrar</button>
+        </form>
+    </div>
+</div>
